@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+body {
+  background-color: #efeeee;
+  overflow-x: hidden;
+}
+
+.main {
+  margin: 0;
+  h1 {
+    position: absolute;
+    margin-top: 0;
+    padding-top: 19%;
+    padding-left: 12%;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 71px;
+    font-weight: 900;
+  }
+}
+
+body {
+  margin: 0px;
+}
+
+.aboutSection {
+  margin: 5%;
+  margin-top: 7%;
+  border-left: 1px dashed whi;
+
+  h1 {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 102px;
+    line-height: 120px;
+    margin-top: 0%;
+    text-align: left;
+    margin-left: 3%;
+    color: rgba(129, 128, 128, 0.404);
+  }
+  ul {
+    margin-top: 10%;
+    list-style: none;
+    border-left: 2px dashed rgba(255, 255, 255, 0.295);
+    li {
+      color: white;
+      font-family: "Nunito";
+      font-size: 70px;
+      margin: 5% 0% 5% 0%;
+      font-weight: 200;
+      span {
+        display: block;
+        font-size: 30px;
+        font-weight: 100;
+      }
+    }
+  }
+}
+
+.project {
+  h1 {
+    font-family: "Nunito";
+    margin: 2%;
+    margin-left: 14%;
+    font-size: 90px;
+    font-weight: 100;
+  }
+
+  ul {
+    list-style: none;
+    font-family: "Nunito";
+    font-weight: 100;
+    li {
+      color: white;
+      font-size: 45px;
+      span {
+        display: block;
+        width: 40%;
+        font-size: 30px;
+      }
+    }
+  }
+  .EcommApp {
+    margin-left: 2%;
+    margin-top: 4%;
+  }
+
+  .ReactApp {
+    float: right;
+    text-align: right;
+    margin-right: 2%;
+    margin-top: 3%;
+    li {
+      span {
+        width: 80%;
+        margin-left: 20%;
+      }
+    }
+  }
+  .WhatsAppBot{
+      margin-left: 2%;
+      margin-top: 43%;
+  }
+}
+
+.Link {
+  color: white;
+  text-decoration: none;
+}
+
+.ContactSection {
+  margin: 5%;
+  font-family: "Nunito";
+  h1 {
+    margin-left: 14%;
+    font-size: 90px;
+    font-weight: 100;
+  }
+
+  .ContactContainer {
+    display: flex;
+    .Contactinfo {
+      width: 40%;
+      ul {
+        list-style: none;
+        padding-top: 3%;
+        li {
+          color: white;
+          margin-bottom: 2%;
+          font-size: 20px;
+          font-weight: 100;
+        }
+      }
+    }
+
+    .ContactForm {
+      margin-left: 10%;
+      width: 50%;
+      form {
+        margin-top: -10%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 5%;
+        border-radius: 10px 10px 0px 0px;
+        box-shadow: 0 1.1px 2.7px rgba(255, 255, 255, 0.03),
+          0 2.6px 6.9px rgba(255, 255, 255, 0.04), 0 5.6px 14.2px rgba(255, 255, 255, 0.044),
+          0 12.6px 29.2px rgba(255, 255, 255, 0.048), 0 100px 80px rgba(240, 240, 240, 0.07);
+        input,
+        textarea {
+          margin-top: 2%;
+          resize: none;
+          padding: 1%;
+          font-family: "Nunito";
+          border: none;
+        }
+
+        input:focus,
+        textarea:focus {
+          outline: none;
+          border: none;
+        }
+
+        button {
+          margin-left: 70%;
+          width: 30%;
+          padding: 2%;
+          border-radius: 25px;
+          background-color: transparent;
+          font-family: "Nunito";
+          font-weight: 100;
+          font-size: 20px;
+          transition: all 0.3s;
+          border: none;
+        }
+        button:hover {
+            transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1224px){
+  .main{
+    h1{
+      margin-top: 20%;
+    }
+  }
+  .aboutSection{
+    h1{
+      font-size: 60px;
+    }
+
+    ul{
+      margin-top: 40%;
+      li{
+        font-weight: 100;
+        font-size: 30px;
+        span{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .project{
+    h1{
+      font-size: 60px;
+    }
+    ul{
+      li{
+        margin-top: 25%;
+        font-size: 30px;
+        span{
+          font-size: 20px;
+          width: 50%;
+        }
+      }
+
+      .EcommApp{
+        margin-bottom: 2%;
+        margin-left: 1%;
+      }
+    }
+    .ReactApp{
+      margin-top: 40%;
+    }
+    .WhatsAppBot{
+      margin-top: 140%!important;
+    }
+  }
+  .ContactSection{
+    h1{
+      margin-left: 0%;
+      text-align: center;
+      font-size: 60px;
+    }
+
+    .ContactContainer{
+      margin: 0%;
+      text-align: center;
+      flex-direction: column;
+      ul{
+        padding: 0%;
+      }
+      .Contactinfo{
+        width: 100%;
+        padding: 5% 0% 5% 0%;
+      }
+
+      .ContactForm{
+        margin-top: 6%;
+        form{
+          padding-bottom: 50%;;
+        }
+        width: 100%;
+        margin-left: 0%;
+        textarea{
+          height: 10em;
+        }
+      }
+    }
+  }
+}
