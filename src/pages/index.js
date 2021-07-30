@@ -41,7 +41,7 @@ function IndexPage() {
   }
 
   return (
-    <Parallax pages={4} style={{ top: "0", left: "0" }}>
+    <Parallax pages={5} style={{ top: "0", left: "0" }}>
       <ParallaxLayer offset={0} speed={2.5}>
         <div className="main">
           <motion.div animate={{ x: -20 }}>
