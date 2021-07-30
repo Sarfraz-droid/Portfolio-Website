@@ -4,6 +4,24 @@ body {
   overflow-x: hidden;
 }
 
+
+
+::-webkit-scrollbar{
+  width: 5px;
+  height: 5px;
+  }
+  ::-webkit-scrollbar-thumb{
+  background: #D1D1D1;
+  border-radius: 18px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+  background: #B3AFB3;
+  }
+  ::-webkit-scrollbar-track{
+  background: #F0F0F0;
+  border-radius: 0px;
+  box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+  }
 .main {
   margin: 0;
   h1 {
@@ -16,6 +34,15 @@ body {
     font-size: 71px;
     font-weight: 900;
   }
+}
+
+.cursor{
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(255, 10, 10);
+  border-radius: 50%;
+  position: fixed;
+  z-index: 100;
 }
 
 body {
@@ -142,7 +169,7 @@ body {
         flex-direction: column;
         background-color: white;
         padding: 5%;
-        border-radius: 10px 10px 0px 0px;
+        border-radius: 10px 10px;
         box-shadow: 0 1.1px 2.7px rgba(255, 255, 255, 0.03),
           0 2.6px 6.9px rgba(255, 255, 255, 0.04), 0 5.6px 14.2px rgba(255, 255, 255, 0.044),
           0 12.6px 29.2px rgba(255, 255, 255, 0.048), 0 100px 80px rgba(240, 240, 240, 0.07);
@@ -172,6 +199,7 @@ body {
           font-size: 20px;
           transition: all 0.3s;
           border: none;
+
         }
         button:hover {
             transform: scale(1.2);
@@ -253,13 +281,19 @@ body {
       .ContactForm{
         margin-top: 6%;
         form{
-          padding-bottom: 50%;;
+          padding-bottom: 50%;
+          background-color: #efeeee;
         }
         width: 100%;
         margin-left: 0%;
-        textarea{
-          height: 10em;
+        input,textarea{
+          background-color: #efeeee;
+
         }
+        textarea{
+          height: 15em;
+        }
+        
       }
     }
   }
