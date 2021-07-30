@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import Header from "../components/header"
 import Svg from "../components/Svg"
 import "../scss/Home.scss"
-import "../scss/upDown.scss"
 import upDown from "../components/iconSvg"
 
 
@@ -40,22 +39,9 @@ function IndexPage() {
     hidden: { opacity: 0, x: 0 },
   }
 
-  let cursor = document.querySelector('.cursor');
-
-  document.addEventListener("mousemove", e => {
-    if(cursor != null)
-    {
-      cursor.setAttribute("style","top: " + (e.pageY - 25) + "px;" + "left: " + (e.pageX - 25) + "px;");
-    }else
-    {
-       cursor = document.querySelector('.cursor');
-    }
-    
-  });
-
   return (
     <div>
-
+    <Header />
     <Parallax pages={5} style={{ top: "0", left: "0" }}>
       <ParallaxLayer offset={0} speed={2.5}>
         <div className="main">
