@@ -4,7 +4,8 @@ import { Helmet } from "react-helmet"
 function header() {
   return (
     <Helmet>
-      <title>Sarfraz Alamat</title>
+      <title>Sarfraz Alam</title>
+      <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />  
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
