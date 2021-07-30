@@ -185,7 +185,8 @@ body {
 @media screen and (max-width: 1224px){
   .main{
     h1{
-      margin-top: 20%;
+      margin-top: 25%;
+      font-size: 3.5rem;
     }
   }
   .aboutSection{
@@ -210,11 +211,11 @@ body {
     }
     ul{
       li{
-        margin-top: 25%;
+        margin-top: 30%;
         font-size: 30px;
         span{
-          font-size: 20px;
-          width: 50%;
+          font-size: 15px;
+          width: 80%;
         }
       }
 
@@ -224,17 +225,17 @@ body {
       }
     }
     .ReactApp{
-      margin-top: 40%;
+      margin-top: 50%;
     }
     .WhatsAppBot{
-      margin-top: 140%!important;
+      margin-top: 175%!important;
     }
   }
   .ContactSection{
     h1{
       margin-left: 0%;
       text-align: center;
-      font-size: 60px;
+      font-size: 50px;
     }
 
     .ContactContainer{

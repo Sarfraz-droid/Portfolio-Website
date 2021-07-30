@@ -51,7 +51,7 @@ function IndexPage() {
           <ParallaxLayer offset={0} speed={2.5}>
             <motion.div animate={{ y: 50 }} transition={{ delay: 0.5 }}>
               <h1>I'm Sarfraz Alam</h1>
-              <Svg src={Hi} top="170px" left="180px" zIndex="0" mtop="60px" mleft="50px"/>
+              <Svg src={Hi} top="170px" left="180px" zIndex="0" mtop="60px" mleft="35px" mrotate="0" mscale="0.8"/>
             </motion.div>
           </ParallaxLayer>
           <ParallaxLayer offset={0} speed={5.5}>
@@ -271,7 +271,7 @@ function IndexPage() {
         </div>
       </ParallaxLayer>
       <ParallaxLayer offset={3} speed={0.5}>
-          <Svg src={ContactSlide} top="0px" right="0px" scale="1.1" rotate="0" />
+          <Svg src={ContactSlide} top="0px" right="0px" scale="1.1" rotate="0" mtop="-120px"/>
       </ParallaxLayer>
       <ParallaxLayer offset={3} speed={0.5}>
           <div className="ContactSection">
