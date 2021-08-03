@@ -33,6 +33,10 @@ import Cross from "../assets/Cross.svg"
 import trianglewhite from "../assets/Circlewhite.svg"
 import Hexagon from "../assets/Hexagon.svg"
 
+import Instagram from "../assets/instagram.png"
+import Github from "../assets/github.png"
+import Linkedin from "../assets/linkedin.png"
+
 import creds from "./creds.json"
 import emailjs,{init } from 'emailjs-com';
 init("user_w8yQ0OmEEK4H2Nhn1dsVj");
@@ -320,6 +324,19 @@ function IndexPage() {
                     </form>
                   </div>
               </span>
+          </div>
+      </ParallaxLayer>
+      <ParallaxLayer offset={4} speed={0.5}>
+          <div className="Credentials">
+            <a href="https://www.instagram.com/sarf_alam/">
+              <img src={Instagram} />
+            </a>
+            <a href="https://github.com/Sarfraz-droid">
+              <img src={Github} />
+            </a>
+            <a href="https://www.linkedin.com/in/sarfraz-alam-113575201/">
+              <img src={Linkedin} />
+            </a>
           </div>
       </ParallaxLayer>
     </Parallax>

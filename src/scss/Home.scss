@@ -213,6 +213,29 @@ body {
   }
 }
 
+.Credentials{
+  vertical-align: middle;
+  text-align:center;
+  padding-top: 21%;
+  a{
+
+    display: inline-block;
+    margin: 1%;
+    width: 10%;
+    img{
+      width: 100%;
+    }
+    opacity: 0.2;
+    transform: scale(1);
+    transition: all 0.3s;
+  }
+  a:hover{
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+
+}
+
 
 @media screen and (max-width: 1224px){
   .main{
@@ -299,6 +322,15 @@ body {
         }
         
       }
+    }
+  }
+  .Credentials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a{
+      width: 40%;
+      margin: 2%;
     }
   }
 }
