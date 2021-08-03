@@ -33,7 +33,26 @@ import Cross from "../assets/Cross.svg"
 import trianglewhite from "../assets/Circlewhite.svg"
 import Hexagon from "../assets/Hexagon.svg"
 
+import creds from "./creds.json"
+import emailjs,{init } from 'emailjs-com';
+init("user_w8yQ0OmEEK4H2Nhn1dsVj");
+
 function IndexPage() {
+  const [message, setmessage] = useState('');
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(creds.service, creds.tempid, e.target, creds.userid)
+      .then((result) => {
+        setmessage("Message Sent Successfully")
+        console.log(result);
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
+
+
   const variants = {
     visible: { opacity: 1, x: -20, y: 200 },
     hidden: { opacity: 0, x: 0 },
@@ -292,10 +311,11 @@ function IndexPage() {
                     </ul>
                   </div>
                   <div className="ContactForm">
-                    <form>
-                      <input type="text" placeholder="Name" autoComplete="off"/>
-                      <input type="email" placeholder="Email" autoComplete="off" />
-                      <textarea name="message" placeholder="Message"  rows="17" column="30" autoComplete="off" />
+                    <form onSubmit={sendEmail}>
+                      <p>{message}</p>
+                      <input type="text" placeholder="Name" autoComplete="off" name="name"/>
+                      <input type="email" placeholder="Email" autoComplete="off" name="email" />
+                      <textarea name="message" placeholder="Message"  rows="17" column="30" autoComplete="off"  name="message"/>
                       <button type="submit">SEND</button>
                     </form>
                   </div>
