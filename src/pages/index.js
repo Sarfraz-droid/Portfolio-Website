@@ -49,6 +49,9 @@ function IndexPage() {
     emailjs.sendForm(creds.service, creds.tempid, e.target, creds.userid)
       .then((result) => {
         setmessage("Message Sent Successfully")
+        setTimeout(() => {
+          setmessage("")
+        }, 5000);
         console.log(result);
           console.log(result.text);
       }, (error) => {
